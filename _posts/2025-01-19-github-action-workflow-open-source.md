@@ -3,7 +3,7 @@ layout: post
 title: "Github Action Workflow를 직접 작성해서 오픈 소스 기여해보자!"
 date: 2025-01-19
 description: "VPN 환경에서의 CI/CD 자동화를 위해 FortiClient VPN GitHub Action을 직접 개발하고 Marketplace에 배포한 오픈 소스 기여 경험을 공유합니다."
-tags: [OPEN SOURCE]
+tags: [오픈 소스]
 tistory_id: 57
 ---
 

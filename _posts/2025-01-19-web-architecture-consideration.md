@@ -3,7 +3,7 @@ layout: post
 title: "Web Architechure 고찰"
 date: 2025-01-19
 description: "Internal ELB 생성 및 테스트 과정에서 겪은 트러블슈팅을 통해 웹 아키텍처에 대해 다시 고민해보고 정리한 글입니다."
-tags: [ARCHITECTURE]
+tags: [아키텍처]
 tistory_id: 49
 ---
 

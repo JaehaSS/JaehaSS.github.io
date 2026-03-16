@@ -3,7 +3,7 @@ layout: post
 title: "사내 AX(AI Transformation) 전환기"
 date: 2026-02-18
 description: "AI 도입 이후 개발자 역할의 근본적 변화와 사내 AI 전환 과정에서 컨벤션 표준화 작업을 주도한 경험을 정리한 글입니다."
-tags: [RETROSPECT]
+tags: [회고록]
 tistory_id: 69
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "일 하면서 느끼는 마음가짐의 변화"
 date: 2025-06-03
 description: "현재 회사에서 5개월간 일하며 오너십의 진정한 의미를 깨달은 과정을 정리한 회고록입니다."
-tags: [RETROSPECT]
+tags: [회고록]
 tistory_id: 62
 ---
 

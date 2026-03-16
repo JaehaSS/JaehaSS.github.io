@@ -3,7 +3,7 @@ layout: post
 title: "입사 7개월, \"배려\"라고 생각했던 소통이 \"통보\"였다는 깨달음"
 date: 2025-08-07
 description: "입사 7개월차에 받은 충격적인 피드백을 통해 진정한 협업과 소통의 의미를 깨달은 회고록입니다."
-tags: [RETROSPECT]
+tags: [회고록]
 tistory_id: 64
 ---
 

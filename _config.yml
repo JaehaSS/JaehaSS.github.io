@@ -1,0 +1,22 @@
+title: JaehaSS Blog
+description: 개발 블로그 & 프로젝트 모음
+url: "https://jaehass.github.io"
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - destiny-numbers

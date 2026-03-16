@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <time class="post-date">{{ page.date | date: "%Y년 %m월 %d일" }}</time>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.tags.size > 0 %}
+    <div class="post-tags">
+      {% for tag in page.tags %}
+      <span class="tag">#{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <nav class="post-nav">
+    {% if page.previous.url %}
+    <a href="{{ page.previous.url | relative_url }}" class="nav-prev">
+      &larr; {{ page.previous.title }}
+    </a>
+    {% endif %}
+    {% if page.next.url %}
+    <a href="{{ page.next.url | relative_url }}" class="nav-next">
+      {{ page.next.title }} &rarr;
+    </a>
+    {% endif %}
+  </nav>
+
+  {% include giscus.html %}
+</article>

@@ -9,11 +9,23 @@ title: Home
 </section>
 
 <section class="posts-section">
-  <h2 class="section-title">최근 포스트</h2>
+  <h2 class="section-title">포스트</h2>
+
+  <div class="category-filter" id="category-filter">
+    <button class="filter-btn active" data-category="all">전체</button>
+    {% assign categories = site.posts | map: "tags" | join: "," | split: "," | uniq | sort %}
+    {% for cat in categories %}
+    {% assign cat_trimmed = cat | strip %}
+    {% if cat_trimmed != "" %}
+    <button class="filter-btn" data-category="{{ cat_trimmed }}">{{ cat_trimmed }}</button>
+    {% endif %}
+    {% endfor %}
+  </div>
+
   {% if site.posts.size > 0 %}
   <div class="post-list" id="post-list">
     {% for post in site.posts %}
-    <a href="{{ post.url | relative_url }}" class="post-card" data-index="{{ forloop.index }}">
+    <a href="{{ post.url | relative_url }}" class="post-card" data-tags="{{ post.tags | join: ',' }}">
       <time class="post-date">{{ post.date | date: "%Y.%m.%d" }}</time>
       <h3 class="post-title">{{ post.title }}</h3>
       {% if post.description %}
@@ -55,22 +67,32 @@ title: Home
 <script>
 (function() {
   var PER_PAGE = 6;
-  var cards = document.querySelectorAll('#post-list .post-card');
-  var total = cards.length;
-  var totalPages = Math.ceil(total / PER_PAGE);
+  var allCards = Array.from(document.querySelectorAll('#post-list .post-card'));
   var nav = document.getElementById('pagination');
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var activeCategory = 'all';
+  var filtered = allCards;
 
-  if (totalPages <= 1) return;
-
-  function showPage(page) {
-    cards.forEach(function(card, i) {
-      card.style.display = (i >= (page - 1) * PER_PAGE && i < page * PER_PAGE) ? '' : 'none';
+  function getFiltered() {
+    if (activeCategory === 'all') return allCards;
+    return allCards.filter(function(card) {
+      var tags = (card.getAttribute('data-tags') || '').split(',');
+      return tags.indexOf(activeCategory) !== -1;
     });
-    render(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  function render(current) {
+  function showPage(page) {
+    allCards.forEach(function(c) { c.style.display = 'none'; });
+    filtered.forEach(function(card, i) {
+      card.style.display = (i >= (page - 1) * PER_PAGE && i < page * PER_PAGE) ? '' : 'none';
+    });
+    renderPagination(page);
+  }
+
+  function renderPagination(current) {
+    var totalPages = Math.ceil(filtered.length / PER_PAGE);
+    if (totalPages <= 1) { nav.innerHTML = ''; return; }
+
     var prev = current > 1
       ? '<a class="page-link prev" href="#" data-page="' + (current - 1) + '">&larr; 이전</a>'
       : '<span class="page-link disabled">&larr; 이전</span>';
@@ -86,6 +108,16 @@ title: Home
       });
     });
   }
+
+  filterBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      filterBtns.forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      activeCategory = this.getAttribute('data-category');
+      filtered = getFiltered();
+      showPage(1);
+    });
+  });
 
   showPage(1);
 })();

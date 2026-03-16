@@ -1,4 +1,69 @@
 ---
-layout: home
+layout: default
 title: Home
 ---
+
+<section class="hero">
+  <h1>JaehaSS</h1>
+  <p class="hero-desc">개발 블로그 & 프로젝트</p>
+</section>
+
+<section class="posts-section">
+  <h2 class="section-title">최근 포스트</h2>
+  {% if paginator.posts.size > 0 %}
+  <div class="post-list">
+    {% for post in paginator.posts %}
+    <a href="{{ post.url | relative_url }}" class="post-card">
+      <time class="post-date">{{ post.date | date: "%Y.%m.%d" }}</time>
+      <h3 class="post-title">{{ post.title }}</h3>
+      {% if post.description %}
+      <p class="post-excerpt">{{ post.description }}</p>
+      {% elsif post.excerpt %}
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+      {% endif %}
+      {% if post.tags.size > 0 %}
+      <div class="post-tags">
+        {% for tag in post.tags %}
+        <span class="tag">#{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+
+  {% if paginator.total_pages > 1 %}
+  <nav class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="page-link prev">&larr; 이전</a>
+    {% else %}
+    <span class="page-link disabled">&larr; 이전</span>
+    {% endif %}
+
+    <span class="page-info">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}" class="page-link next">다음 &rarr;</a>
+    {% else %}
+    <span class="page-link disabled">다음 &rarr;</span>
+    {% endif %}
+  </nav>
+  {% endif %}
+
+  {% else %}
+  <p class="empty-state">아직 포스트가 없습니다.</p>
+  {% endif %}
+</section>
+
+<section class="projects-section">
+  <h2 class="section-title">프로젝트</h2>
+  <div class="project-list">
+    <a class="project-card" href="{{ '/destiny-numbers/' | relative_url }}">
+      <span class="project-icon">🔮</span>
+      <div class="project-text">
+        <div class="project-name">운명의 번호</div>
+        <div class="project-desc">사주팔자 오행 기반 로또 번호 추천 & 역대 당첨 시뮬레이션</div>
+      </div>
+    </a>
+  </div>
+</section>

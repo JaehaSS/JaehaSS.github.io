@@ -12,11 +12,15 @@ kramdown:
   syntax_highlighter: rouge
 
 paginate: 6
-paginate_path: "/page/:num/"
+paginate_path: "/page:num/"
+
+gems:
+  - jekyll-paginate
+  - jekyll-seo-tag
 
 plugins:
-  - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-seo-tag
 
 exclude:
   - README.md

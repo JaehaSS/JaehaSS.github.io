@@ -11,8 +11,12 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+paginate: 6
+paginate_path: "/page/:num/"
+
 plugins:
   - jekyll-seo-tag
+  - jekyll-paginate
 
 exclude:
   - README.md

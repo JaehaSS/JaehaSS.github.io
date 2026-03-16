@@ -9,9 +9,10 @@ layout: default
 
 <section class="posts-section">
   <h2 class="section-title">최근 포스트</h2>
-  {% if site.posts.size > 0 %}
+  {% assign posts = paginator.posts | default: site.posts %}
+  {% if posts.size > 0 %}
   <div class="post-list">
-    {% for post in site.posts %}
+    {% for post in posts %}
     <a href="{{ post.url | relative_url }}" class="post-card">
       <time class="post-date">{{ post.date | date: "%Y.%m.%d" }}</time>
       <h3 class="post-title">{{ post.title }}</h3>
@@ -30,6 +31,25 @@ layout: default
     </a>
     {% endfor %}
   </div>
+
+  {% if paginator.total_pages > 1 %}
+  <nav class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="page-link prev">&larr; 이전</a>
+    {% else %}
+    <span class="page-link disabled">&larr; 이전</span>
+    {% endif %}
+
+    <span class="page-info">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}" class="page-link next">다음 &rarr;</a>
+    {% else %}
+    <span class="page-link disabled">다음 &rarr;</span>
+    {% endif %}
+  </nav>
+  {% endif %}
+
   {% else %}
   <p class="empty-state">아직 포스트가 없습니다.</p>
   {% endif %}

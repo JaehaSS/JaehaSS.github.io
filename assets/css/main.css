@@ -146,6 +146,39 @@ a:hover { color: var(--gold-light); }
 
 .empty-state { color: var(--text-dim); text-align: center; padding: 2rem; }
 
+/* === Pagination === */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.page-link {
+  font-size: 0.9rem;
+  color: var(--gold);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  transition: border-color 0.2s, background 0.2s;
+}
+.page-link:hover {
+  border-color: var(--gold);
+  background: rgba(212, 168, 83, 0.08);
+  color: var(--gold-light);
+}
+.page-link.disabled {
+  color: var(--text-dim);
+  pointer-events: none;
+  opacity: 0.4;
+}
+.page-info {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 /* === Post Page === */
 .post-header {
   padding-bottom: 1.5rem;

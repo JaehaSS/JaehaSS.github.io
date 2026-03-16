@@ -3,7 +3,7 @@ layout: post
 title: "FastAPI에서 잘못된 get_db 사용법이 초래한 MySQL BrokenPipeError 해결 방안"
 date: 2025-02-28
 description: "FastAPI로 구축된 서버에서 MySQL BrokenPipeError 오류가 발생한 원인과 제너레이터의 올바른 사용법을 정리한 글입니다."
-tags: [Python]
+tags: [PYTHON]
 tistory_id: 59
 ---
 

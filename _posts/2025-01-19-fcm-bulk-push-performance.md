@@ -3,7 +3,7 @@ layout: post
 title: "FCM 서버 Bulk Push 성능 개선 과정(+FastAPI, HTTP v1 API)"
 date: 2025-01-19
 description: "FCM Bulk Push에서 Thread 과다 생산과 Memory Leak 문제를 Lambda와 비동기 처리로 해결하여 70분에서 4분으로 성능을 개선한 과정을 공유합니다."
-tags: [Python]
+tags: [PYTHON]
 tistory_id: 53
 ---
 

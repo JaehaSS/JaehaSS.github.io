@@ -3,7 +3,7 @@ layout: post
 title: "FastAPI에서 APP Mount + CORSMiddleware"
 date: 2025-01-19
 description: "FastAPI에서 App Mount 시 CORSMiddleware가 기대대로 동작하지 않는 문제를 분석하고, Middleware 등록/실행 순서와 해결 방법을 정리합니다."
-tags: [Python]
+tags: [PYTHON]
 tistory_id: 54
 ---
 

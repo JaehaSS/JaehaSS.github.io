@@ -3,7 +3,7 @@ layout: post
 title: "AWS ECR 비용 최적화 해보기(Python 스크립트를 곁들인)"
 date: 2025-01-19
 description: "AWS ECR의 스토리지 비용을 최적화하기 위해 Python과 Lambda를 활용한 이미지 자동 정리 스크립트를 작성하는 방법을 공유합니다."
-tags: [Python]
+tags: [PYTHON]
 tistory_id: 55
 ---
 

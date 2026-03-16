@@ -3,7 +3,7 @@ layout: post
 title: "PDF 구조, 텍스트 추출까지"
 date: 2025-02-26
 description: "PDF 데이터 파싱하면서 이상한 텍스트들이 발견되어 해당 텍스트들이 왜 생겼는지 트러블 슈팅하면서 정리한 글입니다."
-tags: [ai]
+tags: [AI]
 tistory_id: 58
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "GitHub Spec Kid이란?(SDD)"
 date: 2025-09-22
 description: "GitHub Spec Kit의 개념과 Spec-Driven Development(SDD) 방법론, 설치 및 사용법을 정리한 글입니다."
-tags: [Python]
+tags: [PYTHON]
 tistory_id: 66
 ---
 

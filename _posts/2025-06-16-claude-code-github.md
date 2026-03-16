@@ -3,7 +3,7 @@ layout: post
 title: "Claude Code를 활용한 Github 작업"
 date: 2025-06-16
 description: "Claude Code를 활용하여 GitHub 브랜치 생성, 커밋, PR 작성 등 반복적인 Git 작업을 자동화하는 방법을 정리한 글입니다."
-tags: [ai]
+tags: [AI]
 tistory_id: 63
 ---
 

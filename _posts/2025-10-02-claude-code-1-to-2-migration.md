@@ -3,7 +3,7 @@ layout: post
 title: "간단히 적어보는 claude code 1.0 -> 2.0 적용 방법"
 date: 2025-10-02
 description: "Claude Code 2.0 업그레이드 시 발생하는 설치 경로 충돌 문제와 해결 방법을 간단히 정리한 글입니다."
-tags: [Python]
+tags: [PYTHON]
 tistory_id: 67
 ---
 

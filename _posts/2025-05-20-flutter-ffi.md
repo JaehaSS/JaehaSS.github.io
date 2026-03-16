@@ -3,7 +3,7 @@ layout: post
 title: "Flutter의 FFI"
 date: 2025-05-20
 description: "Flutter에서 FFI(Foreign Function Interface)를 사용하여 C 네이티브 라이브러리와 통신하는 방법과 예제를 정리한 글입니다."
-tags: [Flutter]
+tags: [FLUTTER]
 tistory_id: 61
 ---
 

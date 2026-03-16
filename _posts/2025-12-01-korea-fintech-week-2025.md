@@ -3,7 +3,7 @@ layout: post
 title: "코리아핀테크 위크 2025년 부스 운영 후기"
 date: 2025-12-01
 description: "코리아핀테크 위크 2025에서 AIMS 부스를 운영하며 느낀 경험과 인사이트를 정리한 후기입니다."
-tags: [회고록]
+tags: [RETROSPECT]
 tistory_id: 68
 ---
 

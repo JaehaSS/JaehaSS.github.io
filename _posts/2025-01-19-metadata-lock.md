@@ -3,7 +3,7 @@ layout: post
 title: "MetaData Lock"
 date: 2025-01-19
 description: "MySQL의 Metadata Lock이 무엇인지, 어떻게 발생하고 해결하는지를 실제 예제와 함께 정리한 글입니다."
-tags: [Mysql]
+tags: [MYSQL]
 tistory_id: 52
 ---
 

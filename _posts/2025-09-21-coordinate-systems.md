@@ -3,7 +3,7 @@ layout: post
 title: "좌표계"
 date: 2025-09-21
 description: "개발자가 자주 만나는 좌표계(EPSG:4326, EPSG:3857, EPSG:5179 등)의 개념과 실무 적용 방법을 정리한 글입니다."
-tags: [Python]
+tags: [PYTHON]
 tistory_id: 65
 ---
 

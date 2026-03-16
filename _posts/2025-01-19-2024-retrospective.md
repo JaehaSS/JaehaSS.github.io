@@ -3,7 +3,7 @@ layout: post
 title: "흔한 2년차 개발자의 2024년 회고록"
 date: 2025-01-19
 description: "22년 입사 후 다사다난했던 2024년을 돌아보며, 회사의 변화와 개인적 성장, 그리고 새해 목표를 정리한 회고록입니다."
-tags: [회고록]
+tags: [RETROSPECT]
 tistory_id: 56
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Iterator 와 Generator"
 date: 2025-01-19
 description: "Python의 Iterator와 Generator의 개념, 사용법, 메모리 비교를 통해 차이점과 공통점을 정리한 글입니다."
-tags: [Python]
+tags: [PYTHON]
 tistory_id: 50
 ---
 

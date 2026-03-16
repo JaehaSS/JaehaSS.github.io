@@ -3,7 +3,7 @@ layout: post
 title: "요즘 핫한 Claude Desktop에 MCP 적용하기"
 date: 2025-03-26
 description: "Claude Desktop에 MCP(Model Context Protocol)를 적용하는 방법과 command not found 에러 해결 방법을 정리한 글입니다."
-tags: [ai]
+tags: [AI]
 tistory_id: 60
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "FastAPI + Sqlalchemy를 활용한 Pytest( + async)"
 date: 2025-01-19
 description: "FastAPI와 Sqlalchemy를 사용하여 동기/비동기 Pytest를 작성하고, 중첩 트랜잭션을 활용해 테스트 데이터를 자동 롤백하는 방법을 정리합니다."
-tags: [Python]
+tags: [PYTHON]
 tistory_id: 51
 ---
 

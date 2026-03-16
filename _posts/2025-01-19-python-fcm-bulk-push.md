@@ -3,7 +3,7 @@ layout: post
 title: "Python을 활용한 FCM Bulk Push"
 date: 2025-01-19
 description: "사내에서 FCM 프로젝트를 맡게 되었는데 FastAPI + FCM으로 단일 유저에게 FCM Push하는 예제는 많지만 Bulk Push에 대해서는 한글 예제를 못 찾아서 공유하고자 한다."
-tags: [Python]
+tags: [PYTHON]
 tistory_id: 48
 ---
 

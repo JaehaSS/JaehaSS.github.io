@@ -302,6 +302,13 @@ a:hover { color: var(--gold-light); }
 .post-nav a:hover { color: var(--gold); }
 .nav-next { margin-left: auto; }
 
+/* === Ad Slot === */
+.ad-slot {
+  margin: 2rem 0;
+  text-align: center;
+  min-height: 100px;
+}
+
 /* === Comments === */
 .comments { margin-top: 3rem; }
 

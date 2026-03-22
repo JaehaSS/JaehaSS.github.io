@@ -1,0 +1,162 @@
+---
+layout: default
+title: 개인정보 처리방침
+description: 운명의 당첨번호 앱 개인정보 처리방침
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">개인정보 처리방침</h1>
+    <p style="color: #94a3b8; font-size: 14px;">시행일: 2026년 3월 22일 | 최종 수정일: 2026년 3월 22일</p>
+  </header>
+
+  <div class="post-content">
+    <p>
+      <strong>운명의 당첨번호</strong>(이하 "앱")는 「개인정보 보호법」 제30조에 따라
+      이용자의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록
+      다음과 같이 개인정보 처리방침을 수립·공개합니다.
+    </p>
+
+    <h2>1. 개인정보의 처리 목적</h2>
+    <p>앱은 다음의 목적을 위하여 개인정보를 처리합니다.</p>
+    <ul>
+      <li><strong>사주 분석 및 로또 번호 생성</strong>: 이용자의 사주팔자 오행을 분석하여 맞춤형 로또 번호를 생성합니다.</li>
+      <li><strong>회원 관리</strong>: 회원 가입, 본인 확인, 서비스 이용 기록 관리를 위해 처리합니다.</li>
+      <li><strong>서비스 개선</strong>: 서비스 이용 통계 분석 및 서비스 품질 향상을 위해 처리합니다.</li>
+    </ul>
+
+    <h2>2. 수집하는 개인정보 항목 및 수집 방법</h2>
+    <h3>수집 항목</h3>
+    <table>
+      <thead>
+        <tr><th>구분</th><th>수집 항목</th><th>수집 목적</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>필수</td><td>생년월일시, 성별, 출생 도시</td><td>사주 분석 및 번호 생성</td></tr>
+        <tr><td>필수</td><td>이메일 주소</td><td>회원 가입 및 본인 확인</td></tr>
+        <tr><td>자동 수집</td><td>광고 식별자(ADID), 기기 정보, IP 주소</td><td>광고 제공 및 서비스 개선</td></tr>
+      </tbody>
+    </table>
+
+    <h3>수집 방법</h3>
+    <ul>
+      <li>이용자가 앱 내에서 직접 입력</li>
+      <li>서비스 이용 과정에서 자동 생성·수집 (광고 SDK)</li>
+    </ul>
+
+    <h2>3. 개인정보의 처리 및 보유 기간</h2>
+    <ul>
+      <li><strong>회원 정보</strong>: 회원 탈퇴 시까지 보유 후 즉시 파기</li>
+      <li><strong>로컬 저장 데이터</strong>(번호 생성 이력): 이용자가 직접 삭제하거나 앱 삭제 시 파기</li>
+      <li><strong>광고 관련 데이터</strong>: Google 광고 정책에 따라 처리</li>
+    </ul>
+
+    <h2>4. 개인정보의 제3자 제공</h2>
+    <p>앱은 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 다음의 경우 예외로 합니다.</p>
+    <table>
+      <thead>
+        <tr><th>제공받는 자</th><th>제공 항목</th><th>제공 목적</th><th>보유 기간</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google LLC</td>
+          <td>광고 식별자(ADID), IP 주소, 앱 사용 기록</td>
+          <td>맞춤형 광고 제공 및 광고 성과 측정</td>
+          <td>Google 개인정보처리방침에 따름</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      이용자는 맞춤형 광고 수신을 거부할 수 있습니다.
+      <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google 광고 설정</a>에서
+      맞춤 광고를 비활성화할 수 있습니다.
+    </p>
+
+    <h2>5. 개인정보 처리의 위탁</h2>
+    <p>앱은 원활한 서비스 제공을 위해 다음과 같이 개인정보 처리업무를 위탁하고 있습니다.</p>
+    <table>
+      <thead>
+        <tr><th>수탁자</th><th>위탁 업무</th><th>보유 및 이용 기간</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Supabase, Inc.</td>
+          <td>회원 인증 서비스 운영, 사용자 데이터 저장 및 관리</td>
+          <td>회원 탈퇴 시 또는 위탁 계약 종료 시</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>6. 개인정보의 파기 절차 및 방법</h2>
+    <p>앱은 개인정보 보유 기간의 경과, 처리 목적 달성 등 개인정보가 불필요하게 되었을 때 지체 없이 해당 개인정보를 파기합니다.</p>
+    <ul>
+      <li><strong>파기 절차</strong>: 이용자가 회원 탈퇴를 요청하면 서버(Supabase) 및 로컬 저장소(AsyncStorage)의 데이터를 즉시 삭제합니다.</li>
+      <li><strong>파기 방법</strong>: 전자적 파일은 복구 불가능한 방법으로 삭제합니다.</li>
+    </ul>
+
+    <h2>7. 정보주체의 권리·의무 및 행사 방법</h2>
+    <p>이용자는 언제든지 다음의 권리를 행사할 수 있습니다.</p>
+    <ul>
+      <li>개인정보 열람 요구</li>
+      <li>개인정보 정정·삭제 요구</li>
+      <li>개인정보 처리정지 요구</li>
+      <li>회원 탈퇴 (앱 내 마이페이지에서 가능)</li>
+    </ul>
+    <p>권리 행사는 앱 내 설정 또는 아래 개인정보 보호책임자에게 이메일로 요청할 수 있습니다.</p>
+
+    <h2>8. 개인정보의 안전성 확보 조치</h2>
+    <p>앱은 개인정보의 안전성 확보를 위해 다음 조치를 취하고 있습니다.</p>
+    <ul>
+      <li>개인정보의 암호화: 비밀번호 등 중요 정보는 암호화하여 저장·관리합니다.</li>
+      <li>접근 제한: 개인정보 처리 시스템에 대한 접근 권한을 최소화합니다.</li>
+      <li>보안 프로그램: SSL/TLS 암호화 통신을 사용합니다.</li>
+    </ul>
+
+    <h2>9. 광고 식별자 및 자동 수집 장치</h2>
+    <p>
+      앱은 Google AdMob을 통해 광고를 제공하며, 이 과정에서 광고 식별자(ADID)가 자동으로 수집됩니다.
+      이용자는 기기 설정에서 광고 식별자 수집을 제한할 수 있습니다.
+    </p>
+    <ul>
+      <li><strong>Android</strong>: 설정 > Google > 광고 > "광고 ID 삭제" 또는 "광고 개인 최적화 선택 해제"</li>
+    </ul>
+    <p>
+      Google의 개인정보 처리에 대한 자세한 내용은
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>을
+      참조하시기 바랍니다.
+    </p>
+
+    <h2>10. 만 14세 미만 아동의 개인정보 처리</h2>
+    <p>
+      앱은 만 14세 미만 아동의 회원 가입을 제한하고 있습니다.
+      생년월일 입력을 통해 만 14세 미만으로 확인되는 경우 서비스 이용이 제한됩니다.
+    </p>
+
+    <h2>11. 개인정보 보호책임자</h2>
+    <table>
+      <thead>
+        <tr><th>구분</th><th>내용</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>성명</td><td>신재하</td></tr>
+        <tr><td>연락처</td><td>tkdgkwogk@gmail.com</td></tr>
+      </tbody>
+    </table>
+    <p>개인정보 보호 관련 문의사항은 위 담당자에게 연락해 주시기 바랍니다.</p>
+
+    <h2>12. 권익침해 구제 방법</h2>
+    <p>개인정보 침해에 대한 신고·상담이 필요하신 경우 아래 기관에 문의하실 수 있습니다.</p>
+    <ul>
+      <li>개인정보침해 신고센터: (국번없이) 118 / <a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a></li>
+      <li>개인정보 분쟁조정위원회: (국번없이) 1833-6972 / <a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a></li>
+      <li>대검찰청 사이버수사과: (국번없이) 1301 / <a href="https://www.spo.go.kr" target="_blank" rel="noopener">www.spo.go.kr</a></li>
+      <li>경찰청 사이버수사국: (국번없이) 182 / <a href="https://ecrm.cyber.go.kr" target="_blank" rel="noopener">ecrm.cyber.go.kr</a></li>
+    </ul>
+
+    <h2>13. 처리방침의 변경</h2>
+    <p>
+      이 개인정보 처리방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경 내용의 추가·삭제 및 정정이 있는 경우에는
+      변경사항의 시행 7일 전부터 앱 내 공지사항을 통하여 고지할 것입니다.
+    </p>
+  </div>
+</article>
